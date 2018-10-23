@@ -6,30 +6,31 @@ $(document).ready(function(){
     $('#search-btn').click(function() {
   
 
+
+     const input= $('input').val(); 
+    
+     
       /*
       Given a search term as a string, query the LastFM API.
       Render the tracks given in the API query response.
       */
-
-     const input= $('input').val(); 
-      
-
      
-
-
+    
       Trackster.searchTracksByTitle = function( input) {
-        
-        title= $('input').val(); 
         $.ajax( { 
-          url:'http://ws.audioscrobbler.com/2.0/?method=track.search&track='+title+'&api_key='+api_Key+'&format=json',
+          url:'http://ws.audioscrobbler.com/2.0/?method=track.search&track='+input+'&api_key='+api_Key+'&format=json',
           datatype:'json',
           success: function(response){
           console.log(response.results.trackmatches.track);
           }         
         });   
       }
-     
+    
+      Trackster.searchTracksByTitle(input);
     });
+     
+
+
 
     
 
@@ -51,6 +52,5 @@ $(document).ready(function(){
 
 
 });
-
 
 
