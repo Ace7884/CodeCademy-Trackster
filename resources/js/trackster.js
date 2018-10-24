@@ -30,11 +30,6 @@ $(document).ready(function(){
     });
      
 
-
-
-    
-
-
   var Trackster = {};
 
   /*
@@ -42,6 +37,15 @@ $(document).ready(function(){
     Append each "row" to the container in the body to display all tracks. 
   */
   Trackster.renderTracks = function(tracks) {
+
+    let trackData=[response.results.trackmatches.track];
+    
+    for ( let i = 0 ; i<=trackData.length ; i++) {
+
+      
+
+    }
+
   
   };
   
