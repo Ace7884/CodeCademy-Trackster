@@ -42,7 +42,7 @@ $(document).ready(function(){
     
     for ( let i = 0 ; i<=trackData.length ; i++) {
 
-      
+     let trackinfo='<div id="mock-row">'+'<a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be">'+'<i class="far fa-play-circle fa-lg"></i>'+'</a>'"     #      Song              Artist                       Album art                       Listeners                      Length</div>'; 
 
     }
 

@@ -68,26 +68,38 @@ button.btn:hover{
   margin-left:17.25%;
 }
 
-/* results list attributes */
+/* track list attributes */
 
-.results-list{
+/* .track-list{ 
   font-family: 'Work Sans', sans-serif;
   font-size:1rem;
   color:rgb(74,74,74);
   background-color:black;
   border-bottom:1px solid rgb(204,204,204);
  
-}
+} */
 
 #mock-row{
-  margin-left:8.75%;
+  /* margin-left:8.75%;  */
+  
+  font-family: 'Work Sans', sans-serif;
+  font-size:1rem;
+  color:rgb(74,74,74);
+  background-color:black;
+  padding:0.5rem; 
+  border-bottom:1px solid rgb(204,204,204);
+  width:100%;
+  
+ 
 }
 
-.results-list div{
-  padding:0.5rem;
-}
+/*.track-list div{
+   padding:0.5rem; 
+}*/
 
 #mock-row i{
   color:rgb(255,0,171);
+  padding-left:11.13%;
+  padding-right:5%;
 }
 
