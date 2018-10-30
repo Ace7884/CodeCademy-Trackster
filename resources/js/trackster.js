@@ -5,8 +5,6 @@ $(document).ready(function(){
 
     $('#search-btn').click(function() {
   
-
-
      const input= $('input').val(); 
     
      
@@ -22,6 +20,7 @@ $(document).ready(function(){
           datatype:'json',
           success: function(response){
           console.log(response.results.trackmatches.track);
+          Trackster.renderTracks(response.results.trackmatches.track);
           }         
         });   
       }
@@ -36,25 +35,28 @@ $(document).ready(function(){
     Given an array of track data, create the HTML for a Bootstrap row for each.
     Append each "row" to the container in the body to display all tracks. 
   */
-  Trackster.renderTracks = function(tracks) {
+  Trackster.renderTracks = function(input) {
 
-    let trackData=[response.results.trackmatches.track];
+   
     
-    for ( let i = 0 ; i<=trackData.length ; i++) {
+// loop iriterating the function n requested times//
+for ( i=0 ; i<input.length ; i++ ) {
 
-     let trackinfo='<div id="mock-row">'+'<a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be">'+'<i class="far fa-play-circle fa-lg"></i>'+'</a>'"     #      Song              Artist                       Album art                       Listeners                      Length</div>'; 
+  let trackinfo='<div id="mock-row">'+'<a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be">'+
+  '<i class="far fa-play-circle fa-lg"></i>'+'</a>'+
+  '     '+(i+1)+'      '+input[i].name+'              '+input[i].artist+'                       Album art                       '+input[i].listeners+'                      Length</div>'; 
 
+
+
+          console.log(input[i]);
+          $('.track-list').append(trackinfo);
+         
+      
     }
 
-  
+
   };
   
   
   
-
-
-
-
 });
-
-
