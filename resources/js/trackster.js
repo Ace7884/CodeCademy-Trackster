@@ -41,15 +41,19 @@ $(document).ready(function(){
     
 // loop iriterating the function n requested times//
 for ( i=0 ; i<input.length ; i++ ) {
-
-  let trackinfo='<div id="mock-row">'+'<a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be">'+
-  '<i class="far fa-play-circle fa-lg"></i>'+'</a>'+
-  '     '+(i+1)+'      '+input[i].name+'              '+input[i].artist+'                       Album art                       '+input[i].listeners+'                      Length</div>'; 
-
-
+  let track=input[i];
+  let mediumAlbumArt=track.image[1]["#text"];
+  let trackinfo='<div class="container-fluid">'
+  +'<div id="mock-row" class="row form-inline" >'
+  +'<div  class="col-2"><a href="https://www.youtube.com/watch?v=eI_O5_tJ1hA&feature=youtu.be"><i class="far fa-play-circle fa-lg"></i></a></div>'
+  +'<div  class="col-4">'+i+'&nbsp;'+ track.name+'</div>' 
+  +'<div  class="col-2">'+track.artist+'</div>' 
+  +'<div  class="col-2"><img src='+mediumAlbumArt+'></div>'
+  +'<div  class="col-2">'+track.listeners+'</div>'
+  +'</div>';
 
           console.log(input[i]);
-          $('.track-list').append(trackinfo);
+          $('#results').append(trackinfo);
          
       
     }

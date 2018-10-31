@@ -11,6 +11,7 @@ html{
   padding-right:none;
 }
 
+
 /* / header styles  */
 
 nav{
@@ -65,41 +66,32 @@ button.btn:hover{
 }
 
 #song-column{
-  margin-left:17.25%;
+  margin-left:16.5%;
 }
 
-/* track list attributes */
+/* track list attributes */ 
 
-/* .track-list{ 
-  font-family: 'Work Sans', sans-serif;
-  font-size:1rem;
-  color:rgb(74,74,74);
-  background-color:black;
-  border-bottom:1px solid rgb(204,204,204);
- 
-} */
+#results.container-fluid{
+  padding-left:0;
+  padding-right:0;
+}
 
-#mock-row{
-  /* margin-left:8.75%;  */
+#mock-row{  
   
   font-family: 'Work Sans', sans-serif;
   font-size:1rem;
   color:rgb(74,74,74);
   background-color:black;
-  padding:0.5rem; 
+  padding: 0.25rem;
   border-bottom:1px solid rgb(204,204,204);
-  width:100%;
+  max-width:120%;
   
  
 }
-
-/*.track-list div{
-   padding:0.5rem; 
-}*/
 
 #mock-row i{
   color:rgb(255,0,171);
-  padding-left:11.13%;
-  padding-right:5%;
+  padding-left:60.13%;
+  
 }
 
