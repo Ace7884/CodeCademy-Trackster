@@ -37,7 +37,7 @@ $(document).ready(function(){
   */
   Trackster.renderTracks = function(input) {
 
-   
+    $('#results').empty();
     
 // loop iriterating the function n requested times//
 for ( i=0 ; i<input.length ; i++ ) {
@@ -51,10 +51,8 @@ for ( i=0 ; i<input.length ; i++ ) {
   +'<div  class="col-2"><img src='+mediumAlbumArt+'></div>'
   +'<div  class="col-2">'+track.listeners+'</div>'
   +'</div>';
-
-          console.log(input[i]);
-          $('#results').append(trackinfo);
-         
+  
+  $('#results').append(trackinfo); 
       
     }
 
