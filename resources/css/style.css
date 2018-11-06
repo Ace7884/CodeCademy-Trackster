@@ -29,6 +29,8 @@ nav{
  
 }
 
+ 
+
   input.form { 
   height: 2.5rem;
   border-radius:20px;
@@ -95,3 +97,25 @@ button.btn:hover{
   
 }
 
+/* logo animation code */
+
+@keyframes Logo {
+  0% {color:rgb(255,0,171);}
+  12.5%{color:rgb(255, 0, 85);} 
+  25% {color:rgb(255, 0, 0);}
+  37.50% {color:orangered;}
+  50%{color:rgb(190, 54, 0)}
+  62.5% {color:rgb(121, 2, 91);}
+  75%{color:rgb(35 ,2,63);} 
+  87.5%{color:rgb(173, 0, 159);} 
+  100%{color:rgb(221, 0, 147);} 
+
+ }
+
+.load{
+  
+  animation-name: Logo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
