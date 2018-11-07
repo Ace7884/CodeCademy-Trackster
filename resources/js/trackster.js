@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 
 $(document).ajaxStart(function (){
-    $('h1').addClass('.load'); 
+    $('h1').addClass('load'); 
     }
 ); 
 
@@ -65,13 +65,21 @@ Render the tracks given in the API query response.
         $.ajax({
             url: 'http://ws.audioscrobbler.com/2.0/?method=track.search&track=' + title + '&api_key=' + api_Key + '&format=json',
             success: function(response) {
-                $('h1').addClass('.load'); 
+                $('h1').addClass('load'); 
+                console.log(response)
                 Trackster.renderTracks(response.results.trackmatches.track);
                 
             }
         });
     };
 
+    // sorting function for attributes
+
+    $('.attribute').click(function() {
+
+        $('#results').sort(htmlTrackInfo);
+
+    });
 
 
 
