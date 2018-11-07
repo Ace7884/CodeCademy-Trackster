@@ -41,7 +41,7 @@ Trackster.renderTracks = function(tracks) {
         track.listeners = numeral(track.listeners).format('0,0');
         let htmlTrackInfo = '<div class="container-fluid">' +
             '<div id="mock-row" class="row form-inline" >' +
-            '<div  class="col-2"><a href=" '+track.url+'" target="_blank"><i class="far fa-play-circle fa-lg"></i></a></div>' +
+            '<div  class="col-2"><a href=" '+ track.url +'" target="_blank"><i class="far fa-play-circle fa-lg"></i></a></div>' +
             '<div  class="col-4">' + i + '&nbsp;' + track.name + '</div>' +
             '<div  class="col-2">' + track.artist + '</div>' +
             '<div  class="col-2"><img src=' + mediumAlbumArt + '></div>' +
@@ -49,10 +49,14 @@ Trackster.renderTracks = function(tracks) {
             '</div>';
 
         $('#results').append(htmlTrackInfo);
+        $('#results').data( 'row'+[i] , htmlTrackInfo );
+        console.log($('#results').data( 'row'+[i] ));
 
-    }
+        
+    };    
 
 };
+
 
 /*
 Given a search term as a string, query the LastFM API.
@@ -73,15 +77,20 @@ Render the tracks given in the API query response.
         });
     };
 
-    // sorting function for attributes
+    
 
-    $('.attribute').click(function() {
+   // sorting function for attributes
 
-        $('#results').sort(htmlTrackInfo);
+   Trackster.sortTracksByAttribute = function() {
+   $('.attribute').click(function() {
 
-    });
+    console.log($('#results').data( 'row'+[i] ));
+
+
+
+});
 
 
 
 
- 
+};
