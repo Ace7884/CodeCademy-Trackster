@@ -64,7 +64,6 @@ Trackster.renderTracks = function (tracks) {
 
     $("#results").append(htmlTrackInfo);
     $("#results").data("row" + [i], htmlTrackInfo);
-    console.log(track);
   }
 };
 
@@ -91,7 +90,5 @@ Trackster.searchTracksByTitle = function (title) {
 // sorting function for attributes
 
 Trackster.sortTracksByAttribute = function () {
-  $(".attribute").click(function () {
-    console.log($("#results").data("row" + [i]));
-  });
+  $(".attribute").click(function () {});
 };
