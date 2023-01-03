@@ -2,118 +2,125 @@
   Custom styles for Trackster App
 */
 
-html{
-  font-size:16px;
+html {
+  font-size: 16px;
+  background-color: black;
 }
 
-.row , .col {
+.row,
+.col {
   padding-left: none;
-  padding-right:none;
+  padding-right: none;
 }
-
 
 /* / header styles  */
 
-nav{
-  padding:2.25rem;
-  background-color:rgb(35,2,63);
-  margin:0;
+nav {
+  padding: 2.25rem;
+  background-color: rgb(35, 2, 63);
+  margin: 0;
 }
 
- h1.brand  {
-  font-family: "Righteous" , sans-serif;
-  font-size:2.5rem;
-  color:rgb(255,0,171);
-  margin-left:6%;
-  margin-bottom:0;
- 
+h1.brand {
+  font-family: "Righteous", sans-serif;
+  font-size: 2.5rem;
+  color: rgb(255, 0, 171);
+  margin-left: 6%;
+  margin-bottom: 0;
 }
 
- 
-
-  input.form { 
+input.form {
   height: 2.5rem;
-  border-radius:20px;
-  color:rgb(191,191,191);
-}
-
-
-  input.form:focus{
-    
-     color: rgb(74,74,74); 
-}
-
-  button.btn {
   border-radius: 20px;
-  background-color: rgb(255,102,204);
-  color:rgb(35,2,63);
+  color: rgb(191, 191, 191);
+  outline: none;
+}
+
+input.form:focus {
+  color: rgb(74, 74, 74);
+}
+
+button.btn {
+  border-radius: 20px;
+  background-color: rgb(255, 102, 204);
+  color: rgb(35, 2, 63);
   height: 2.5rem;
-  margin-left:1%
+  margin-left: 1%;
 }
 
-button.btn:hover{
-  background-color:rgb(255,0,171);
+button.btn:hover {
+  background-color: rgb(255, 0, 171);
 }
-
 
 /* attributes bar styles */
 
-#attribute-bar{
-  font-size:1rem;
-  background-color:rgb(104,0,255);
-  color:rgb(255,255,255);
-  padding:0.5rem;
-  border-bottom: 1px solid rgb(204,204,204);
-
+#attribute-bar {
+  font-size: 1rem;
+  background-color: rgb(104, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 
-#song-column{
-  margin-left:16.5%;
+#song-column {
+  margin-left: 16.5%;
 }
 
-/* track list attributes */ 
+/* track list attributes */
 
-#results.container-fluid{
-  padding-left:0;
-  padding-right:0;
+#results.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#mock-row{  
-  
-  font-family: 'Work Sans', sans-serif;
-  font-size:1rem;
-  color:rgb(74,74,74);
-  background-color:black;
+#mock-row {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  color: rgb(74, 74, 74);
+  background-color: black;
   padding: 0.25rem;
-  border-bottom:1px solid rgb(204,204,204);
-  max-width:120%;
-  
- 
+  border-bottom: 1px solid rgb(204, 204, 204);
+  max-width: 120%;
 }
 
-#mock-row i{
-  color:rgb(255,0,171);
-  padding-left:60.13%;
-  
+#mock-row i {
+  color: rgb(255, 0, 171);
+  padding-left: 60.13%;
 }
 
 /* logo animation code */
 
 @keyframes Logo {
-  0% {color:rgb(255,0,171);}
-  12.5%{color:rgb(255, 0, 85);} 
-  25% {color:rgb(255, 60, 0);}
-  37.50% {color:rgb(255, 145, 0);}
-  50%{color:rgb(190, 54, 0)}
-  62.5% {color:rgb(121, 2, 91);}
-  75%{color:rgb(35 ,2,63);} 
-  87.5%{color:rgb(173, 0, 159);} 
-  100%{color:rgb(221, 0, 147);} 
+  0% {
+    color: rgb(255, 0, 171);
+  }
+  12.5% {
+    color: rgb(255, 0, 85);
+  }
+  25% {
+    color: rgb(255, 60, 0);
+  }
+  37.50% {
+    color: rgb(255, 145, 0);
+  }
+  50% {
+    color: rgb(190, 54, 0);
+  }
+  62.5% {
+    color: rgb(121, 2, 91);
+  }
+  75% {
+    color: rgb(35, 2, 63);
+  }
+  87.5% {
+    color: rgb(173, 0, 159);
+  }
+  100% {
+    color: rgb(221, 0, 147);
+  }
+}
 
- }
-
-.load{
-  
+.load {
   animation-name: Logo;
   animation-duration: 0.85s;
   animation-timing-function: linear;
